@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #333;
+  height: auto;
+}
+
+.white-link {
+  color: white;
+  text-decoration: underline;
+}
+.alert-social,
+.mega-menu {
+  z-index: 1000;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.alert-social-bg {
+  background-color: #444;
+}
+.alert-social {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+}
+.logo-text {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.main-social-media .social-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+.mega-menu {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.mega-menu .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.mega-menu .menu li {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.mega-menu .menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.mega-menu .dropdown {
+  position: absolute;
+  background-color: white;
+  color: #000;
+  top: 100%;
+  right: 0;
+  display: none;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-top: 3px solid yellow;
+}
+
+.mega-menu .dropdown .column h3 {
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+.mega-menu .dropdown .column a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+.mega-menu .dropdown a:hover {
+  text-decoration: underline;
+}
+
+.mega-menu .dropdown .column {
+  flex: 1;
+  padding: 10px;
+}
+
+.mega-menu .menu li.has-dropdown:hover .dropdown {
+  display: flex;
+}
+
+.menu-toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu li {
+    text-align: center;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+  }
+}
+
+.menu .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  list-style: none;
+  padding: 10px;
+  top: 100%;
+  right: 0;
+}
