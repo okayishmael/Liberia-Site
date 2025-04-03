@@ -114,3 +114,57 @@
   text-decoration: underline;
   text-decoration-color: var(--color-primary-blue);
 }
+
+/* Event Feature cards section */
+.event-cards-container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 4rem 0;
+
+  display: grid;
+
+  grid-gap: 2rem;
+  margin: 0 auto;
+  height: fit-content;
+
+  @media (min-width: 48rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-event-post-card {
+  border: 1px solid #ccc;
+  align-self: start;
+}
+.event-post-card-content {
+  padding: 2rem;
+}
+.event-post-card-content > * {
+  margin-bottom: 1.5rem;
+}
+
+.event-post-card-content .event-post-lead a {
+  display: block;
+  text-align: center;
+  padding: 1rem 0.3rem;
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  margin-top: 2rem;
+}
+
+.event-post-card-content .event-post-lead a:hover {
+  background-color: var(--color-accent);
+}
+
+.event-post-title a {
+  line-height: 1.2;
+  color: var(--color-primary-blue);
+}
+.event-post-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary-blue);
+}
+.event-post-lead {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
