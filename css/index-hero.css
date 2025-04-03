@@ -11,6 +11,14 @@ Primary style
   margin: 0;
   padding: 0;
 }
+:root {
+  --color-bark-text: #1e262d;
+  --color-primary-blue: rgb(23, 33, 84);
+  --color-accent: #d44457;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-light-blue: #213164;
+}
 
 html {
   font-size: 62.5%;
@@ -24,7 +32,7 @@ body {
 }
 
 a {
-  color: #d44457;
+  color: var(--color-primary-blue);
   text-decoration: none;
 }
 
@@ -683,7 +691,7 @@ Hero Slider - by CodyHouse.co
 /* Main Content */
 .cd-main-content {
   width: 90%;
-  max-width: 768px;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 2em 0;
 }
