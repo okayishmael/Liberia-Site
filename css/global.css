@@ -208,10 +208,14 @@
   color: var(--color-white);
   background-color: var(--color-light-blue);
   padding: 1rem 0;
-  width: 50%;
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   border: none;
+
+  @media (min-width: 48rem) {
+    width: 50%;
+  }
 }
 .newsletters-subscription-card a:hover {
   background-color: var(--color-primary-blue);
