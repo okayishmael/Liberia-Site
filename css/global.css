@@ -207,7 +207,8 @@
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-light-blue);
-  padding: 1rem 12rem;
+  padding: 1rem 2rem;
+  width: 50%;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   border: none;
