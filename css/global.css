@@ -7,7 +7,7 @@
 
 :root {
   --color-bark-text: #1e262d;
-  --color-primary-blue: rgb(23, 33, 84);
+  --color-primary-blue: #172154;
   --color-accent: #d44457;
   --color-white: #fff;
   --color-black: #000;
@@ -83,6 +83,7 @@
 }
 .feature-blog-post-card {
   border: 1px solid #ccc;
+  background-color: var(--color-white);
 }
 
 .blog-post-card-content {
@@ -135,6 +136,7 @@
 .feature-event-post-card {
   border: 1px solid #ccc;
   align-self: start;
+  background-color: var(--color-white);
 }
 .event-post-card-content {
   padding: 2rem;
@@ -147,13 +149,13 @@
   display: block;
   text-align: center;
   padding: 1rem 0.3rem;
-  background-color: var(--color-primary-blue);
+  background-color: var(--color-light-blue);
   color: var(--color-white);
   margin-top: 2rem;
 }
 
 .event-post-card-content .event-post-lead a:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary-blue);
 }
 
 .event-post-title a {
@@ -167,4 +169,50 @@
 .event-post-lead {
   line-height: 1.4;
   margin-bottom: 0;
+}
+
+/* Newsletter Subscription styles */
+
+.newsletters-subscription-section {
+  padding: 4rem 0;
+}
+.newsletters-subscription-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--color-primary-blue);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.newsletters-subscription-section p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--color-primary-blue);
+  margin-bottom: 2rem;
+}
+
+.newsletters-subscription-card {
+  background-color: var(--color-white);
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletters-subscription-card a {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  padding: 1rem 12rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  border: none;
+}
+.newsletters-subscription-card a:hover {
+  background-color: var(--color-primary-blue);
+  cursor: pointer;
 }
