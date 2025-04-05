@@ -66,7 +66,6 @@ ol {
   line-height: 1.6;
   font-size: 1.6rem;
   padding-left: 3rem;
-  width: 70%;
 }
 
 ol li {
@@ -107,7 +106,7 @@ a:visited {
 }
 
 /*************************** */
-/* home page Main Section */
+/* home page Main Section  below the hero slider*/
 /* --------------------------- */
 
 /* Feature services cards */
@@ -346,7 +345,7 @@ a:visited {
 }
 .heading-bread-crumbs-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
   padding: 3rem 0;
@@ -371,7 +370,6 @@ a:visited {
   margin-bottom: 1rem;
   font-size: 1.6rem;
   line-height: 1.6;
-  width: 70%;
 }
 
 .sidebar {
@@ -399,6 +397,13 @@ a:visited {
 }
 
 @media (min-width: 48rem) {
+  .heading-bread-crumbs-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 3rem 0;
+  }
   .two-sides-content {
     display: flex;
     justify-content: space-between;
@@ -548,4 +553,60 @@ a:visited {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/*  ------------------------------ */
+/*  staffs pages styles */
+/*  ------------------------------ */
+/* Blog Feature cards section */
+.staff-cards-container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 4rem 0;
+
+  display: grid;
+  grid-gap: 2rem;
+  margin: 0 auto;
+
+  @media (min-width: 48rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 75rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.staff-card {
+  border: 1px solid #ccc;
+  background-color: var(--color-white);
+}
+
+.staff-card-content {
+  padding: 2rem;
+}
+.staff-card-content > * {
+  margin-bottom: 0.1rem;
+}
+.staff-name a {
+  line-height: 1.2;
+  color: var(--color-primary-blue);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.job-title {
+  line-height: 1.4;
+}
+
+.staff-card-content p a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-primary-blue);
+  text-decoration: underline !important;
+  text-decoration-style: dotted !important;
+}
+
+.staff-card-content p a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary-blue);
 }
