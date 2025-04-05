@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="./css/footer.css">
 	<!-- css ends -->
 
-	<!-- fontawesome script begins -->
+	<!-- fontawesome script begins  This is for the icons on the site-->
 	<script src="https://kit.fontawesome.com/3098b5cb1c.js" crossorigin="anonymous"></script>
 	<!-- fontawesome script ends -->
 
@@ -66,7 +66,6 @@
 			<!-- mobile menu icon -->
 			<button class="menu-toggle" onclick="openNav()"> Menu ☰</button>
 
-			<!-- menu for medium and larger screen begins -->
 			<!-- menu for medium and larger screen begins -->
 			<ul class="medium-large-menu">
 				<li><a href="index.html">Home</a></li>
@@ -181,6 +180,7 @@
 								<a href="videos.html">Video Gallary</a>
 								<a href="documents.html">Documents</a>
 							</div>
+						</div>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -189,230 +189,115 @@
 		<!-- Main Nav ends -->
 	</header>
 	<!-- Header section ends -->
-
-	<!--Hero Slider begins -->
-	<section class="cd-hero js-cd-hero js-cd-autoplay">
-		<ul class="cd-hero__slider">
-			<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
-				<div class="cd-hero__content cd-hero__content--full-width">
-					<h2>Hero slider</h2>
-					<p>A simple, responsive slideshow in CSS &amp; JavaScript.</p>
-					<a href="#" class="cd-hero__btn">Read More</a>
-				</div> <!-- .cd-hero__content -->
-			</li>
-
-			<li class="cd-hero__slide js-cd-slide">
-				<div class="cd-hero__content cd-hero__content--half-width">
-					<h2>Slide title here</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-					<a href="#" class="cd-hero__btn">CTA Button</a>
-				</div> <!-- .cd-hero__content -->
-
-				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
-					<img src="assets/hero-slider/Frame 3.png" alt="tech 1">
-				</div> <!-- .cd-hero__content -->
-			</li>
-
-			<li class="cd-hero__slide js-cd-slide">
-				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
-					<img src="assets/hero-slider/Frame 3.png" alt="tech 2">
-				</div> <!-- .cd-hero__content -->
-
-				<div class="cd-hero__content cd-hero__content--half-width">
-					<h2>Slide title here</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-					<a href="#" class="cd-hero__btn">CTA Button</a>
-				</div> <!-- .cd-hero__content -->
-
-			</li>
-
-			<li class="cd-hero__slide cd-hero__slide--video js-cd-slide">
-				<div class="cd-hero__content cd-hero__content--full-width">
-					<h2>Slide title here</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
-					<a href="#0" class="cd-hero__btn">Learn more</a>
-				</div> <!-- .cd-hero__content -->
-
-				<div class="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="assets/video/video">
-					<!-- video element will be loaded using JavaScript -->
-				</div> <!-- .cd-hero__content -->
-			</li>
-
-			<li class="cd-hero__slide js-cd-slide">
-				<div class="cd-hero__content cd-hero__content--half-width">
-					<h2>Slide title here</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-					<a href="#" class="cd-hero__btn">CTA Button</a>
-				</div> <!-- .cd-hero__content -->
-
-				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
-					<img src="assets/hero-slider/Frame 3.png" alt="tech 1">
-				</div> <!-- .cd-hero__content -->
-			</li>
-		</ul> <!-- .cd-hero__slider -->
-
-		<div class="cd-hero__nav js-cd-nav">
-			<nav>
-				<span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
-
-				<ul>
-					<li class="cd-selected"><a href="#0">Story 1</a></li>
-					<li><a href="#0">Story 2</a></li>
-					<li><a href="#0">Story 3</a></li>
-					<li><a href="#0">Story 4</a></li>
-					<li><a href="#0">Story 5</a></li>
-				</ul>
-			</nav>
-		</div> <!-- .cd-hero__nav -->
-	</section> <!-- .cd-hero -->
-	<!--Hero Slider ends -->
-	<main>
-		<!-- Government officials -->
-		<section class="gov-officials section"></section>
-
-		<!-- Feature services section -->
-		<section class="feature-services-section section">
-
-			<div class="feature-services-cards cards-container">
-				<a href="visa.html">
-					<div class="feature-services-card">
-						<p class="services-card-content">
-							<i class="fa-solid fa-file"></i>
-							<span>Visa</span>
-						</p>
-					</div>
-				</a>
-				<a href="#">
-					<div class="feature-services-card">
-						<p class="services-card-content">
-							<i class="fa-solid fa-passport"></i>
-							<span>Passport</span>
-						</p>
-					</div>
-				</a>
-				<a href="#">
-					<div class="feature-services-card">
-						<p class="services-card-content">
-							<i class="fa-solid fa-file-invoice"></i>
-							<span>Other Documents</span>
-						</p>
-					</div>
-				</a>
+	<!-- heading and bread crumbs -->
+	<div class="heading-bread-crumbs">
+		<div class="heading-bread-crumbs-content container">
+			<h1 class="page-tile">Passport</h1>
+			<div class="bread-crumbs">
+				<a href="index.html">Home</a> | <a href="consular-services.html">Consular</a> | <span>Passport</span>
 			</div>
-		</section>
-
-		<!-- Feature blog posts section -->
-
-		<section class="feature-blog-posts-section section">
-
-			<div class="feature-blog-posts-cards blog-cards-container">
-
-				<div class="feature-blog-post-card">
-					<a href="#"><img src="assets/images/blog-feature-card-images/blog-post-card.png" alt=""></a>
-					<div class="blog-post-card-content">
-						<h2 class="blog-post-title">
-							<a href="#">Minister Nyanti Calls on the Public to Desist from Publishing Names of
-								Alleged Deportees from Unofficial Sources</a>
-						</h2>
-						<p class="blog-post-lead">The Dean of the Liberian Cabinet and Foreign Minister of Liberia,
-							Her Excellency Sara Beysolow-Nyanti, is urging the media and <a href="#">Read More</a>
-						</p>
-					</div>
-				</div>
-
-				<div class="feature-blog-post-card">
-					<a href="#"><img src="assets/images/blog-feature-card-images/blog-post-card.png" alt=""></a>
-					<div class="blog-post-card-content">
-						<h2 class="blog-post-title">
-							<a href="#">Minister Nyanti Calls on the Public to Desist from Publishing Names of
-								Alleged Deportees from Unofficial Sources</a>
-						</h2>
-						<p class="blog-post-lead">The Dean of the Liberian Cabinet and Foreign Minister of Liberia,
-							Her Excellency Sara Beysolow-Nyanti, is urging the media and <a href="#">Read More</a>
-						</p>
-					</div>
-				</div>
-
-				<div class="feature-blog-post-card">
-					<a href="#"><img src="assets/images/blog-feature-card-images/blog-post-card.png" alt=""></a>
-					<div class="blog-post-card-content">
-						<h2 class="blog-post-title">
-							<a href="#">Minister Nyanti Calls on the Public to Desist from Publishing Names of
-								Alleged Deportees from Unofficial Sources</a>
-						</h2>
-						<p class="blog-post-lead">The Dean of the Liberian Cabinet and Foreign Minister of Liberia,
-							Her Excellency Sara Beysolow-Nyanti, is urging the media and <a href="#">Read More</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Feature Event posts section  begins-->
-
-		<section class="feature-event-posts-section section">
-
-			<div class="feature-event-posts-cards event-cards-container">
-
-				<div class="feature-event-post-card">
-					<a href="#"><img src="assets/images/events/event.png" alt=""></a>
-					<div class="event-post-card-content">
-						<h2 class="event-post-title">
-							<a href="#">Young Professional Mixer</a>
-						</h2>
-						<p class="event-post-lead">You're invited the Young Liberian professional mixer.
-							<a href="#">Make Reservation now</a>
-						</p>
-					</div>
-				</div>
+		</div>
+	</div>
+	<!-- heading and bread crumbs ends -->
 
 
+	<!-- visa content begins -->
+	<main class="visa-page-content-container container">
+		<!-- visa page content begins -->
+		<div class="two-sides-content">
+			<!-- visa content begins -->
+			<div class="content-left">
+				<img src="assets/images/blog-feature-card-images/blog-post-card.png" alt="">
+				<h2>Passport Information</h2>
+				<p><strong>Effective November 23, 2020:</strong>
+				</p>
+				<p>Passport application fee for Liberians living abroad has been dropped to $160.00 Applicants must
+					remit a total of $ 165.00. This includes the $ 5.00 transaction fee charged by the bank.
+				</p>
+				<p>To apply for a Liberia passport, please use this link:
+				</p>
+				<p><a href="https://secure.liberiapassports.com/" target="_blank">Republic of Liberia ECOWAS Online
+						Passport Service</a></p>
 
-				<div class="feature-event-post-card">
-					<a href="#"><img src="assets/images/events/event.png" alt=""></a>
-					<div class="event-post-card-content">
-						<h2 class="event-post-title">
-							<a href="#">All Liberian Weekend</a>
-						</h2>
-						<p class="event-post-lead">Dean of the Liberian Cabinet and Foreign Minister of Liberia,
-							Her Excellency Sara Beysolow-Nyanti, is hosting all meet and greet weekend event <a
-								href="#">Register Now</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Feature Event posts section  ends-->
-		<!-- Newsletters Subscription section  begins-->
-		<section class="newsletters-subscription-section section">
-			<div class="newsletters-subscription-card">
-				<h2>Subscribe to our newsletters</h2>
-				<p>Get the latest news and updates from the Embassy of Liberia.</p>
-
-				<a href="#" class="subscription-btn">Subscribe</a>
 
 
 			</div>
-		</section>
-		<!-- Newsletters Subscription section  ends-->
 
+			<!-- Side bars begins -->
+			<div class="content-right">
+				<div class="sidebar">
+					<h2>Consular Services</h2>
+					<ul class="sidebar-list">
+						<li><a href="visa.html">Visa </a></li>
+						<li><a href="passport.html">Passport</a></li>
+						<li><a href="birth-affidavit.html">Birth Affidavit Form</a></li>
+						<li><a href="mortuary-certificate.html">Mortuary Certificate Form</a></li>
+						<li><a href="pet-travel.html">Document for Pet Travel to Liberia</a></li>
+						<li><a href="change-of-name.html">Change of Name Form</a></li>
+					</ul>
+				</div>
 
+				<div class="sidebar">
+					<h2>Government links</h2>
+					<ul class="sidebar-list">
+						<li><a href="https://www.emansion.gov.lr/" target="_blank">The Executive Mansion</a></li>
+						<li><a href="https://www.mofa.gov.lr/" target="_blank">Ministry of Foreign Affairs</a></li>
+						<li><a href="https://www.mfdp.gov.lr/" target="_blank">Ministry of Finance and Development
+								Planning</a></li>
+						<li><a href="https://www.cbl.org.lr/" target="_blank">Central Bank of Liberia</a></li>
+						<li><a href="https://www.moa.gov.lr/" target="_blank">Ministry of Agriculture</a></li>
+						<li><a href="https://www.moci.gov.lr/" target="_blank">Ministry of Commerce and Industry</a>
+						</li>
+						<li><a href="https://mod.gov.lr/" target="_blank">Ministry of Defense</a></li>
+						<li><a href="https://moh.gov.lr/" target="_blank">Ministry of Health and Social Welfare</a>
+						</li>
+						<li><a href="https://www.micat.gov.lr/" target="_blank">Ministry of Information, Culture and
+								Tourism</a>
+						</li>
+						<li><a href="https://www.mia.gov.lr/" target="_blank">Ministry of Internal Affairs</a></li>
+						<li><a href="https://www.moj.gov.lr/" target="_blank">Ministry of Justice</a></li>
+						<li><a href="https://www.mme.gov.lr/" target="_blank">Ministry of Lands, Mines and
+								Energy</a></li>
+						<li><a href="https://www.nsa.gov.lr/" target="_blank">Ministry of National Security
+							</a></li>
+						<li><a href="https://www.nasscorp.org.lr/" target="_blank">National Social Security and
+								Welfare
+								Corporation</a></li>
+						<li><a href="https://postandparcel.info/directory/listing/ministry-of-posts-and-telecommunications-of-liberia/"
+								target="_blank">Ministry
+								of Post and Telecommunications</a></li>
+						<li><a href="https://www.mpw.gov.lr/" target="_blank">Ministry of Public Works</a></li>
+						<li><a href="https://www.mot.gov.lr/" target="_blank">Ministry of Transport</a></li>
+						<li><a href="https://moys.gov.lr/" target="_blank">Ministry of Youth and Sports</a></li>
+
+					</ul>
+				</div>
+
+				<div class="sidebar">
+					<h2>Suggested for you</h2>
+					<p class="lead">isa information content goes here. This is a placeholder text for the visa
+						information section.cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident <a href="#">Read more</a> </p>
+				</div>
+
+			</div>
+		</div>
 	</main>
+
+	<!-- Footer begins -->
 	<footer class="footer-section">
 		<div class="footer-content">
 
 			<div class="column">
-				<h4>Embassy Link</h4>
+				<h4>Embassy Links</h4>
 				<div class="footer-column-link-items">
 					<a href="visa.html">Visa</a>
-					<a href="#">Passport</a>
+					<a href="passport.html">Passport</a>
 					<a href="embassy.html">The Embassy</a>
-					<a href="ambassador.html">The Ambassador</a>
 					<a href="about-liberia.html">About Liberia</a>
 					<a href="consular-services.html">Consular Services</a>
 					<a href="media.html">Media</a>
-					<a href="document.html">Documents</a>
+					<a href="documents.html">Documents</a>
 					<a href="sitemap.html">Site Map</a>
 				</div>
 			</div>
@@ -465,7 +350,6 @@
 	<!-- Scripts. Do not relocate -->
 	<script src="./js/menu.js"></script>
 	<script src="./js/index-hero.js"></script>
-	<script src="./js/subscription.js"></script>
 </body>
 
 </html>
