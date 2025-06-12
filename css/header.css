@@ -64,11 +64,14 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+  color: white;
+  text-decoration: none;
 }
 
 .menu {
   flex-direction: column;
   width: 100%;
+  margin-top: 60px;
 }
 
 .menu li {
