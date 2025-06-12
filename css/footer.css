@@ -15,7 +15,7 @@
 }
 
 .footer-section {
-  padding: 6rem 0;
+  padding: 6rem 0 0;
   background-color: var(--color-light-blue);
   color: var(--color-white);
 }
@@ -70,4 +70,15 @@
 
 .footer-social-media .social-icon img:hover {
   opacity: 1;
+}
+
+#copy-right {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+.footer-bottom {
+  background-color: var(--color-primary-blue);
+  padding: 0.4rem 0;
 }
